@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        x:Class="DetailWinner.MainWindow"
+        Title="DetailWinner"
+        Padding="10">
+    <StackPanel HorizontalAlignment="Center">
+        <TextBlock HorizontalAlignment="Center">Welcome To</TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontSize="40" Foreground="#ECB952">Detail Winner!!!</TextBlock>
+        <Grid Margin="5" ColumnDefinitions="120, 100" RowDefinitions="Auto, Auto, Auto">
+            <Label Grid.Row="0" Grid.Column="0" Margin="10">Celsius</Label>
+            <TextBox Name="Celsius" Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0"/>
+            <Label Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</Label>
+            <TextBox Name="Fahrenheit" Grid.Row="1" Grid.Column="1" Margin="0 5" IsReadOnly="True" Text="0"></TextBox>
+        </Grid>
+        <Button HorizontalAlignment="Center" Click="Button_OnClick">Calculate</Button>
+    </StackPanel>
+</Window>
