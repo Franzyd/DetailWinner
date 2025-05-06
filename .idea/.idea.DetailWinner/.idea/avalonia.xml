@@ -3,7 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="DetailWinner.csproj" />
         <entry key="MainWindow.axaml" value="DetailWinner.csproj" />
+        <entry key="Views/HomePageView.axaml" value="DetailWinner.csproj" />
       </map>
     </option>
   </component>
