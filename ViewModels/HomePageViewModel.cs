@@ -1,6 +1,11 @@
-﻿namespace DetailWinner.ViewModels;
+﻿using DetailWinner.Data;
 
-public partial class HomePageViewModel : ViewModelBase
+namespace DetailWinner.ViewModels;
+
+public partial class HomePageViewModel : PageViewModel
 {
-    
+    public HomePageViewModel()
+    {
+        PageName = ApplicationPageNames.Home;
+    }
 }

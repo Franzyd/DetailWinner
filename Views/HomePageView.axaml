@@ -2,8 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:DetailWinner.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="DetailWinner.Views.HomePageView">
+    <Design.DataContext><vm:HomePageViewModel/></Design.DataContext>
     <StackPanel HorizontalAlignment="Center">
         <TextBlock HorizontalAlignment="Center">Welcome To</TextBlock>
         <TextBlock HorizontalAlignment="Center" FontSize="40" Foreground="#ECB952">Detail Winner!!!</TextBlock>

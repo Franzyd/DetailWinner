@@ -9,5 +9,6 @@
         x:DataType="vm:MainViewModel"
         Title="DetailWinner"
         Padding="10">
+    <Design.DataContext><vm:MainViewModel/></Design.DataContext>
     <ContentControl Content="{Binding CurrentPage}" />
 </Window>
