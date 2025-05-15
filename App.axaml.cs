@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using DetailWinner.Data;
 using DetailWinner.Factories;
+using DetailWinner.Interfaces;
+using DetailWinner.Utils;
 using DetailWinner.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -24,6 +27,8 @@ public partial class App : Application
         collection.AddSingleton<MainViewModel>();
         collection.AddTransient<HomePageViewModel>();
         collection.AddTransient<GamePageViewModel>();
+
+        collection.AddScoped<IDetailImageService, DetailImageService>();
 
         collection.AddSingleton<Func<ApplicationPageNames, PageViewModel>>(x => name => name switch
         {

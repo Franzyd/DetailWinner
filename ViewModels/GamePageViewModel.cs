@@ -1,14 +1,17 @@
-﻿using System;
-using Avalonia.Media.Imaging;
-using Avalonia.Platform;
+﻿using System.Collections.Generic;
 using DetailWinner.Data;
+using DetailWinner.Interfaces;
 
 namespace DetailWinner.ViewModels;
 
 public partial class GamePageViewModel : PageViewModel
 {
-    public GamePageViewModel()
+    private IDetailImageService detailImageService;
+    
+    public GamePageViewModel(IDetailImageService detailImageService)
     {
         PageName = ApplicationPageNames.Game;
+        
+        this.detailImageService = detailImageService;
     }
 }
