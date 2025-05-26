@@ -28,7 +28,7 @@ public partial class App : Application
         collection.AddTransient<HomePageViewModel>();
         collection.AddTransient<GamePageViewModel>();
 
-        collection.AddScoped<IDetailImageService, DetailImageService>();
+        collection.AddSingleton<IDetailImageService, DetailImageService>();
 
         collection.AddSingleton<Func<ApplicationPageNames, PageViewModel>>(x => name => name switch
         {

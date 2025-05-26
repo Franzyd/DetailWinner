@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:DetailWinner.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="DetailWinner.Views.GamePageView">
+             x:Class="DetailWinner.Views.GamePageView"
+             x:DataType="vm:GamePageViewModel">
     <Design.DataContext><vm:GamePageViewModel/></Design.DataContext>
-    <Image x:Name="ImageView"/>
+    <Image x:Name="ImageView" Source="{Binding ImageSource}"/>
 </UserControl>

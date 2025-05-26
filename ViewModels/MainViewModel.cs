@@ -2,6 +2,8 @@
 using CommunityToolkit.Mvvm.Input;
 using DetailWinner.Data;
 using DetailWinner.Factories;
+using DetailWinner.Interfaces;
+using DetailWinner.Utils;
 
 namespace DetailWinner.ViewModels;
 
