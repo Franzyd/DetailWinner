@@ -6,5 +6,5 @@ namespace DetailWinner.Utils;
 
 public class DetailImageService : IDetailImageService
 {
-    public List<DetailImage> Images { get; set; } = [new()];
+    public List<DetailImage> DetailImages { get; set; } = [new()];
 }

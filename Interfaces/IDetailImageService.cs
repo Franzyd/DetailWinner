@@ -5,5 +5,5 @@ namespace DetailWinner.Interfaces;
 
 public interface IDetailImageService
 {
-    List<DetailImage> Images { get; set; }
+    List<DetailImage> DetailImages { get; set; }
 }

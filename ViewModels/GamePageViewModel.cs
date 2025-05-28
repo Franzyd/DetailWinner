@@ -16,10 +16,15 @@ public partial class GamePageViewModel : PageViewModel
         PageName = ApplicationPageNames.Game;
         
         _detailImageService = detailImageService;
-        var detailImage = detailImageService.Images[0];
+        var detailImage = detailImageService.DetailImages[0];
         
         var imageTransformer = new ImageTransformer(detailImage.ImageUri);
         var zoomedBitmap = imageTransformer.ZoomImage(detailImage.ZoomFactor, detailImage.CenterX, detailImage.CenterY);
         _imageSource = zoomedBitmap;
+    }
+
+    public void ZoomOut()
+    {
+        
     }
 }
